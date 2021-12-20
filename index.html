@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-img"></div>
+    <main>
+      <div class="header">
+        <h1 class="title">TODO</h1>
+        <div onclick="changeTheme()" class="tgl-btn"></div>
+      </div>
+
+      <div class="type-todo">
+        <div class="circle"></div>
+        <input type="text" id="todo-input" placeholder="Create a new todo..." />
+      </div>
+
+      <!-- <ul class="todo-items" id="myUL">
+        <li>Complete online Javascript course</li>
+        <li class="checked">Jump around the park 3x</li>
+        <li>10 minutes meditation</li>
+        <li>Pick up groceries</li>
+        <li>Complete Todo App on Frontend Mentor</li>
+        <li>Organize office</li>
+      </ul> -->
+
+      <div class="todos"></div>
+      <div class="remarks">
+        <div class="completedCount"></div>
+        <div onclick="clearCompleted()"> Clear Completed</div>
+        <div class="filters">
+          <div>All</div>
+          <div>Active</div>
+          <div>Completed</div>
+        </div>
+      </div>
+      
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
